@@ -11,26 +11,13 @@ type Inputs = {
   ano: number;
   preco: number;
   km_horas: string; // agora é string no banco
+  km?: string; // quilometragem
+  combustivel?: string; // tipo de combustível
+  destaque?: boolean; // se é embarcação em destaque
   foto: string;
   acessorios: string;
   motor: string; // era combustivel
   marcaId: number;
-};
-
-// Tipo para embarcação sem relacionamento completo
-type EmbarcacaoBasicaType = {
-  id: number;
-  modelo: string;
-  ano: number;
-  preco: number;
-  km: number;
-  foto: string;
-  acessorios: string | null;
-  combustivel: string;
-  destaque: boolean;
-  marcaId: number;
-  createdAt: string;
-  updatedAt: string;
 };
 
 export default function AdminEmbarcacoes() {

@@ -7,6 +7,9 @@ export type EmbarcacaoType = {
     preco: number
     motor: string // combustível
     km_horas: string // horas de uso
+    km?: string // quilometragem
+    combustivel?: string // tipo de combustível
+    destaque?: boolean // se é embarcação em destaque
     foto: string
     acessorios: string | null
     vendida: boolean

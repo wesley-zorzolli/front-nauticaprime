@@ -16,7 +16,7 @@ export default function AdminPropostas() {
   const [propostas, setPropostas] = useState<PropostaType[]>([]);
   const [propostaSelecionada, setPropostaSelecionada] = useState<PropostaType | null>(null);
   const [abrirResposta, setAbrirResposta] = useState(false);
-  const { register, handleSubmit, reset, setValue } = useForm<Inputs>();
+  const { register, handleSubmit, reset } = useForm<Inputs>();
   const { admin } = useAdminStore();
 
   useEffect(() => {
