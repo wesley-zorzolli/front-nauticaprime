@@ -131,10 +131,11 @@ export default function MinhasPropostas() {
     ))
 
     return (
-        <section className="max-w-7xl mx-auto px-4">
-            <h1 className="mb-6 mt-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
-                Listagem de <span className="underline underline-offset-3 decoration-8 decoration-orange-400 dark:decoration-orange-600">Minhas Propostas</span>
-            </h1>
+        <section className="bg-gray-100 min-h-screen">
+            <div className="max-w-7xl mx-auto px-4 py-6">
+                <h1 className="mb-6 mt-4 text-3xl font-extrabold leading-none tracking-tight text-gray-900 md:text-4xl lg:text-5xl">
+                    Listagem de <span className="underline underline-offset-3 decoration-8 decoration-orange-400 dark:decoration-orange-600">Minhas Propostas</span>
+                </h1>
 
             {!cliente.id || !cliente.token ? (
                 <div className="text-center py-12">
@@ -194,6 +195,7 @@ export default function MinhasPropostas() {
                     </div>
                 </div>
             )}
+            </div>
         </section>
     )
 }

@@ -40,9 +40,9 @@ export default function App() {
     : null;
 
   return (
-    <>
+    <div className="bg-gray-100 min-h-screen">
       <InputPesquisa setEmbarcacoes={setEmbarcacoes} />
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4 py-6">
         <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-black">
           Embarcações{" "}
           <span className="underline underline-offset-3 decoration-8 decoration-blue-600 dark:decoration-blue-600">
@@ -54,6 +54,6 @@ export default function App() {
           {listaEmbarcacoes}
         </div>
       </div>
-    </>
+    </div>
   );
 }

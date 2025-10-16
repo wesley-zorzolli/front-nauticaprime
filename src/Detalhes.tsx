@@ -163,7 +163,7 @@ export default function Detalhes() {
 
   if (carregando) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto"></div>
           <p className="mt-4 text-gray-600">Carregando detalhes da embarcação...</p>
@@ -174,7 +174,7 @@ export default function Detalhes() {
 
   if (!embarcacao) {
     return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-100 flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Embarcação não encontrada</h2>
           <p className="text-gray-600 mb-4">A embarcação que você está procurando não existe ou foi removida.</p>
@@ -190,7 +190,7 @@ export default function Detalhes() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-900 dark:to-slate-950 py-6 md:py-10">
+    <div className="min-h-screen bg-gray-100 py-6 md:py-10">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         <div className="mb-4">
           <Link to="/" className="inline-flex items-center text-slate-600 hover:text-slate-900 dark:text-slate-300 dark:hover:text-white transition">
